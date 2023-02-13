@@ -38,8 +38,8 @@ long alsValue = 0;
 
 
 // Replace with your network credentials
-const char* ssid     = "VPN1";
-const char* password = "09126141426";
+const char* ssid     = "SSID";
+const char* password = "XXXX";
 
 // REPLACE with your Domain name and URL path or IP address with path
 const char* serverName = "http://192.168.1.88/Cathy/post-Cathy-data.php";
@@ -49,7 +49,7 @@ const char* serverName = "http://192.168.1.88/Cathy/post-Cathy-data.php";
 String apiKeyValue = "tPmAT5Ab3j7F9";
 
 String sensorName = "MULTI";
-String sensorLocation = "TEST";
+String sensorLocation = "Living Room";
 String BoardName = "Cathy";
 
 
