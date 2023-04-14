@@ -4,7 +4,7 @@
 $servername = "localhost";
 $dbname = "Weather";
 $username = "admin";
-$password = "pi";
+$password = "XXXXXXXX";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
