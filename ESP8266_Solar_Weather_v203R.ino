@@ -6,8 +6,8 @@
 #include <ESP8266HTTPClient.h>
 
 // WiFi and server settings
-const char* ssid = "VPN1";
-const char* password = "09126141426";
+const char* ssid = "XXXXXXXX";
+const char* password = "XXXXXXXX";
 const char* serverUrl = "http://192.168.1.88/Cathy/post-data.php";
 
 const int LED = D4; // GPIO2
