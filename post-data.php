@@ -39,7 +39,7 @@ $pressure = $_POST['pressure'];
 $lux = $_POST['lux'];
 $mq135 = $_POST['mq135'];
 
-$sql = "INSERT INTO weather_data (temperature, humidity, pressure, lux, mq135) VALUES ('$temperature>
+$sql = "INSERT INTO weather_data (temperature, humidity, pressure, lux, mq135) VALUES ('" . $temperature . "', '" . $humidity . "', '" . $pressure . "', '" . $lux . "', '" . $mq135 . "')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
