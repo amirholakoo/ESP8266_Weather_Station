@@ -4,16 +4,19 @@
 $servername = "localhost";
 $dbname = "Weather";
 $username = "admin";
-$password = "XXXXXXXX";
+$password = "XXX";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, temperature, humidity, pressure, lux, mq135, timestamp FROM weather_data order by>
+$sql = "SELECT id, temperature, humidity, pressure, lux, mq135, timestamp FROM weather_data order by timestamp desc limit 40";
 
 $result = $conn->query($sql);
+if (!$result) {
+    die("Query failed: " . $conn->error);
+}
 
 while ($data = $result->fetch_assoc()){
     $sensor_data[] = $data;
